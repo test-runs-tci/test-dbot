@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.2.0)
     connection_pool (2.4.1)
     faraday (1.10.3)
       faraday-em_http (~> 1.0)
@@ -27,12 +28,16 @@ GEM
     faraday-retry (1.0.3)
     multipart-post (2.4.0)
     rack (2.2.8.1)
-    redis (4.8.1)
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
+    redis (4.5.1)
     ruby2_keywords (0.0.5)
-    sidekiq (6.5.10)
-      connection_pool (>= 2.2.5, < 3)
+    sidekiq (5.2.10)
+      connection_pool (~> 2.2, >= 2.2.2)
       rack (~> 2.0)
-      redis (>= 4.5.0, < 5)
+      rack-protection (>= 1.5.0)
+      redis (~> 4.5, < 4.6.0)
 
 PLATFORMS
   arm64-darwin-22
@@ -40,7 +45,7 @@ PLATFORMS
 
 DEPENDENCIES
   faraday (~> 1.10)
-  sidekiq (~> 6.5)
+  sidekiq (~> 5.2, >= 5.2.4)
 
 BUNDLED WITH
    2.4.22
