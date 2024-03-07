@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-gem 'sidekiq', '~> 5.2', '>= 5.2.7'
+gem 'sidekiq', '~> 6.5'
 gem 'faraday', '~> 1.10'
