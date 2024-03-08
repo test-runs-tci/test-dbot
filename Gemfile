@@ -3,4 +3,4 @@
 source "https://rubygems.org"
 
 gem 'sidekiq', '~> 6.5'
-gem 'faraday', '~> 1.10'
+gem 'faraday', '~> 2.9'
